@@ -3,7 +3,13 @@ package org.example;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * @autor Patricia
+ * @version 1.0
+ */
 public class Ejercicio4 {
+
+    static Scanner teclado = new Scanner(System.in);
 
     public static void main(String[] args) {
 
@@ -27,9 +33,13 @@ public class Ejercicio4 {
 
     }
 
+    /**
+     * @author Patricia
+     * @version 1.0
+     * Método para introducir las ganancias diarias de un bar
+     * @return - devuelve un vector con los importes diarios de martes a domingo
+     */
     public static double[] introducirRecaudacion(){
-
-        Scanner teclado = new Scanner(System.in);
 
         double recaudacion[] = new double[6];
 
@@ -41,6 +51,11 @@ public class Ejercicio4 {
 
     }
 
+    /**
+     * Método que calcular qué día se han tenido más ventas.
+     * @param recaudacion - recibe un vector con las ventas diarias de martes a domingo
+     * @return - devuelve el día de la semana que más ventas han habido
+     */
     public static String diaMaximo(double recaudacion[]){
 
         double maximo = recaudacion[0];
